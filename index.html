@@ -164,38 +164,38 @@
           "<br>" +
           "</div>";
 
-        var ctx = document.getElementById("myChart").getContext("2d");
-        var chart = new Chart(ctx, {
-          type: "line",
-          data: {
-            labels: ["10", "1000", "10000", "60000"],
-            datasets: [
-              {
-                label: "Time Complexity",
-                data: [1, Math.log10(1000), 10000, 3600000],
-                backgroundColor: "rgba(255, 99, 132, 0.2)",
-                borderColor: "rgba(255, 99, 132, 1)",
-                borderWidth: 1,
-              },
-            ],
-          },
-          options: {
-            scales: {
-              yAxes: [
-                {
-                  ticks: {
-                    beginAtZero: true,
-                  },
-                },
-              ],
-            },
-            elements: {
-              line: {
-                tension: 0.4, // Adjust this value for the desired curve style
-              },
-            },
-          },
-        });
+        // var ctx = document.getElementById("myChart").getContext("2d");
+        // var chart = new Chart(ctx, {
+        //   type: "line",
+        //   data: {
+        //     labels: ["10", "1000", "10000", "60000"],
+        //     datasets: [
+        //       {
+        //         label: "Time Complexity",
+        //         data: [1, Math.log10(1000), 10000, 3600000],
+        //         backgroundColor: "rgba(255, 99, 132, 0.2)",
+        //         borderColor: "rgba(255, 99, 132, 1)",
+        //         borderWidth: 1,
+        //       },
+        //     ],
+        //   },
+        //   options: {
+        //     scales: {
+        //       yAxes: [
+        //         {
+        //           ticks: {
+        //             beginAtZero: true,
+        //           },
+        //         },
+        //       ],
+        //     },
+        //     elements: {
+        //       line: {
+        //         tension: 0.4, // Adjust this value for the desired curve style
+        //       },
+        //     },
+        //   },
+        // });
       }
     </script>
   </body>
